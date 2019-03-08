@@ -108,5 +108,7 @@ namespace DungeonsOfDoom
             Console.ReadKey();
             Play();
         }
+
+        // Det här är en kommentar för att testa om Git funkar ;)
     }
 }
