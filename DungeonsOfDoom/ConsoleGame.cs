@@ -30,7 +30,9 @@ namespace DungeonsOfDoom
 
         private void CreatePlayer()
         {
-            player = new Player(30, 0, 0);
+            Console.WriteLine("Enter your name: ");
+            string name = Console.ReadLine();
+            player = new Player(name, 30, 0, 0);
         }
 
         private void CreateWorld()
@@ -73,6 +75,7 @@ namespace DungeonsOfDoom
 
         private void DisplayStats()
         {
+            Console.WriteLine($"Player: {player.Name}");
             Console.WriteLine($"Health: {player.Health}");
         }
 
