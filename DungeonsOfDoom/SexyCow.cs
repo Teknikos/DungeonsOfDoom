@@ -6,24 +6,13 @@ namespace DungeonsOfDoom
 {
     class SexyCow : Creature
     {
-<<<<<<< HEAD
-        public SexyCow(int baseHealth) : base(baseHealth)
+        public int Sexyness { get; set; }
+
+        public SexyCow(int baseHealth, int sexyness) : base(baseHealth)
         {
             Health = baseHealth;
-        }
-=======
-
-        public SexyCow(int sexyness)
-        {
             Sexyness = sexyness;
+
         }
-
-
-
-
-    public int Sexyness { get; set; }
->>>>>>> e21259e59d2cc5b5a853c63eeb3047881e7b2ad8
     }
-
-
 }
