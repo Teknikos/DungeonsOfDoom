@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DungeonsOfDoom
 {
-    class Item
+    abstract class Item
     {
         public Item(string name)
         {
@@ -14,5 +14,21 @@ namespace DungeonsOfDoom
         }
 
         public string Name { get; set; }
+    }
+
+    class Weapon : Item
+    {
+        public Weapon(string name) : base(name)
+        {
+            name = "Weapon";
+        }
+    }
+
+    class Potion : Item
+    {
+        public Potion(string name) : base(name)
+        {
+            name = "Potion";
+        }
     }
 }

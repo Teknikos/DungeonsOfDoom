@@ -48,7 +48,9 @@ namespace DungeonsOfDoom
                     if (percentage < 10)
                         world[x, y].Monster = new Monster(30);
                     else if (percentage < 20)
-                        world[x, y].Item = new Item("Sword");
+                        world[x, y].Item = new Weapon("Sword");
+                    else if (percentage < 25)
+                        world[x, y].Item = new Potion("Potion");
                 }
             }
         }
@@ -75,7 +77,7 @@ namespace DungeonsOfDoom
 
         private void DisplayStats()
         {
-            Console.WriteLine($"Player: {player.Name}");
+            Console.WriteLine($"\nPlayer: {player.Name}");
             Console.WriteLine($"Health: {player.Health}");
         }
 
@@ -101,6 +103,22 @@ namespace DungeonsOfDoom
             {
                 player.X = newX;
                 player.Y = newY;
+
+                EncounterRoom();
+            }
+        }
+
+        private void EncounterRoom()
+        {
+            if (world[player.X, player.Y] == null)
+            {
+                Console.WriteLine("You found a potion!");
+                Console.ReadKey();
+            }
+            else
+            {
+                Console.WriteLine("Game's broken man!");
+                Console.ReadKey();
             }
         }
 
