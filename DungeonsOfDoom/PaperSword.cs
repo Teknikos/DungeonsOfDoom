@@ -11,7 +11,7 @@ namespace DungeonsOfDoom
         {
 
             LolPower = lolpower;
-
+            Console.WriteLine("sucker!!!");
 
         }
 
