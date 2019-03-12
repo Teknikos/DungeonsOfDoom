@@ -6,5 +6,13 @@ namespace DungeonsOfDoom
 {
     class ImportantMoth
     {
+
+
+        public ImportantMoth(string importantMeeting)
+        {
+            ImportantMeeting = importantMeeting;
+        }
+
+        public string ImportantMeeting { get; set; }
     }
 }

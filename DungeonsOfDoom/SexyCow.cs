@@ -6,5 +6,17 @@ namespace DungeonsOfDoom
 {
     class SexyCow
     {
+
+        public SexyCow(int sexyness)
+        {
+            Sexyness = sexyness;
+        }
+
+
+
+
+    public int Sexyness { get; set; }
     }
+
+
 }
