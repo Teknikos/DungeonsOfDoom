@@ -6,5 +6,14 @@ namespace DungeonsOfDoom
 {
     class BranchOfDoom
     {
+
+        public BranchOfDoom(int ammountOfDoom)
+        {
+
+            AmmountOfDoom = ammountOfDoom;
+        }
+
+        public int AmmountOfDoom { get; set; }
+
     }
 }
