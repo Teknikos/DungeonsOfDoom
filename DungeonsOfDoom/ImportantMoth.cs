@@ -4,7 +4,11 @@ using System.Text;
 
 namespace DungeonsOfDoom
 {
-    class ImportantMoth
+    class ImportantMoth : Creature
     {
+        public ImportantMoth(int baseHealth) : base(baseHealth)
+        {
+            Health = baseHealth;
+        }
     }
 }
